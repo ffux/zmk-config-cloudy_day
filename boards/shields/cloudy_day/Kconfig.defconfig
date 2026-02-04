@@ -1,0 +1,42 @@
+if SHIELD_CLOUDY_DAY_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "cloudy_day"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+  default 1
+
+config BT_MAX_CONN
+  default 6
+
+config BT_MAX_PAIRED
+  default 6
+
+endif
+
+if SHIELD_CLOUDY_DAY_LEFT || SHIELD_CLOUDY_DAY_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_POINTING
+    default y
+
+endif
+
+# ---------------------
+# Kconfig for shield "cloudy_day_left" with board "nice_nano_v2"
+# ---------------------
+if BOARD_NICE_NANO_V2 && SHIELD_CLOUDY_DAY_LEFT
+
+config SPI
+    default y
+
+config PMW3610
+    default y
+
+endif
