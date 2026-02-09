@@ -33,4 +33,9 @@
     kscan = <&kscan0>;
 };
 // == Input devices ==
-
+// Input devices on this peripheral part
+// Enabling input listeners and pointing them to the input devices
+&input_listener_left0 {
+    status = "okay";
+    device = <&input_device_right0>;
+};
