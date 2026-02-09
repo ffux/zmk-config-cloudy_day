@@ -29,9 +29,9 @@ config ZMK_POINTING
 endif
 
 # ---------------------
-# Kconfig for shield "cloudy_day_left" with board "nice_nano_v2"
+# Kconfig for shield "cloudy_day_right" with board "nice_nano_v2"
 # ---------------------
-if BOARD_NICE_NANO_V2 && SHIELD_CLOUDY_DAY_LEFT
+if BOARD_NICE_NANO_V2 && SHIELD_CLOUDY_DAY_RIGHT
 
 config SPI
     default y

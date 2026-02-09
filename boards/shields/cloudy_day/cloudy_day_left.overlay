@@ -28,11 +28,3 @@
 &physical_layout_cloudy_day {
     kscan = <&kscan0>;
 };
-// == Input devices ==
-// Input devices on this central part
-// Enabling input listeners and pointing them to the input devices
-&input_listener_left0 {
-    status = "okay";
-    device = <&input_device_left0>;
-};
-
